@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <title>jQuery - Append Input</title>
+    <style>
+      form {
+        font-size: 12px;
+        font-family: Verdana, Arial, Sans-Serif;
+        display: inline-block;
+      }
+      #messages {
+        font-size: 14px;
+        font-family: Garamond, Times, Serif;
+      }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('button').click(function() {
+          var toAdd = $('input[name=message]').val();
+          $('#messages').append('<div class="item">' + toAdd + '</div>');
+        });
+        $('input').focus(function() {
+            $(this).css('outline-color', '#0000FF');
+        });
+        $(document).on('click', '.item', function() {
+          $(this).remove();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <form>Input: <input type="text" name="message" value=""></form>
+    <button>Add</button><br>
+    <div id="messages"></div>
+  </body>
+</html>

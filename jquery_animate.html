@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>jQuery - Animate</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      img {
+        position: absolute;
+      }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('img').animate({top:'+=100px'}, 500);
+      });
+    </script>
+  </head>
+  <body>
+    <img src="images/elevator.png"/>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>jQuery UI - Selectable</title>
+    <style>
+      ol {
+        list-style-type: none;
+        position: relative;
+        left: -20px;
+      }
+      ol li {
+        background: #eeeeee;
+        border-radius: 5px;
+        border: 1px solid black;
+        margin: 3px;
+        padding: 0.4em;
+        font-size: 1em;
+        height: 16px;
+        font-family: Verdana, Arial, Sans-Serif;
+      }
+      ol .ui-selected {
+        background: #F39814; color: white;
+      }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('ol').selectable();
+      });
+    </script>
+  </head>
+  <body>
+    <ol>
+      <li>The Legend of Zelda</li>
+      <li>Zelda II: The Adventure of Link</li>
+      <li>The Legend of Zelda: A Link to the Past</li>
+      <li>The Legend of Zelda: Link's Awakening</li>
+      <li>The Legend of Zelda: Ocarina of Time</li>
+    </ol>
+  </body>
+</html>

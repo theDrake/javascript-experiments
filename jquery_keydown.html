@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <title>jQuery - Keydown</title>
+    <style>
+      img {
+        position: relative;
+        left: 0;
+        top: 0;
+      }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $(document).keydown(function(key) {
+          switch(parseInt(key.which, 10)) {
+            case 65:
+              $('img').animate({left: "-=10px"}, 'fast');
+              break;
+            case 83:
+              $('img').animate({top: "+=10px"}, 'fast');
+              break;
+            case 87:
+              $('img').animate({top: "-=10px"}, 'fast');
+              break;
+            case 68:
+              $('img').animate({left: "+=10px"}, 'fast');
+              break;
+            default:
+              break;
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <img src="images/mario.jpg"/>
+  </body>
+</html>

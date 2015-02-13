@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>jQuery - Mouseenter/Mouseleave</title>
+    <style>
+      div {
+        height: 100px;
+        width: 100px;
+        border-radius: 5px;
+        background-color: #ABCDEF;
+        opacity: 0.25;
+      }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('div').mouseenter(function() {
+          $(this).fadeTo('fast', 1);
+        });
+        $('div').mouseleave(function() {
+          $(this).fadeTo('fast', 0.25);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>

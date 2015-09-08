@@ -6,8 +6,7 @@ var user = prompt("A necromancer approaches. What do you do?").toLowerCase(),
     userSpeed = Math.random(),
     enemySpeed = Math.random();
 
-switch (user)
-{
+switch (user) {
   case 'talk':
   case 'chat':
     console.log("You have a lovely conversation.");

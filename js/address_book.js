@@ -27,8 +27,7 @@ function list() {
 
 function search(lastName) {
     for (var i = 0; i < contacts.length; ++i) {
-        if (contacts[i].lastName == lastName)
-        {
+        if (contacts[i].lastName == lastName) {
             printPerson(contacts[i]);
         }
     }

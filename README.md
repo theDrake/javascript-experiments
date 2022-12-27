@@ -1,2 +1,2 @@
 # javascript-experiments
-A repository for my experiments with the JavaScript programming language.
+A repository for some of my experiments with the [JavaScript](https://en.wikipedia.org/wiki/JavaScript) programming language.
